@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:coverage": "jest --coverage --watchAll=false",
+    "quality": "npm run lint && npm run test:coverage && npm run build",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.1.1",
