@@ -1,5 +1,5 @@
-import styles from "./page.module.css";
-import ProfilePage from "@/app/profile/page";
+import styles from './page.module.css';
+import ProfilePage from '@/app/profile/page';
 
 export default function Home() {
   return (

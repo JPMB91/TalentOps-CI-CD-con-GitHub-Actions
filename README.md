@@ -6,19 +6,18 @@ Proyecto de configuración básica de DevOps para aplicaciones Next.js
 
 Este proyecto sirve como plantilla base para configurar un entorno de desarrollo profesional con herramientas DevOps esenciales. Incluye una pipeline de CI, hooks de pre-commit, y configuración de contenedores docker para despliegue.
 
-## Stack 
-
+## Stack
 
 - **GitHub Actions** - Pipeline de integración continua
 - **Docker** - Containerización de aplicaciones
 - **Husky** - Git hooks para control de calidad pre-commit
 
 Testing
-- **Jest** 
+
+- **Jest**
 - **Testing**
 - **ESLint**
 - **lint-staged**
-
 
 ## Instalación
 

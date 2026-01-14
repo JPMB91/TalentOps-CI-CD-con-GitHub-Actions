@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "cypress/support/e2e.js"  ],
+    "**/*.mts",
+    "cypress/support/e2e.js"
+  ],
   "exclude": ["node_modules"]
 }
