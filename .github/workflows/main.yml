@@ -101,6 +101,7 @@ jobs:
 
   # 🚀 Deploy
   deploy:
+    needs: build
     name: Prepare deploy
     runs-on: ubuntu-latest
     needs: build

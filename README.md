@@ -4,7 +4,7 @@ Proyecto de configuración básica de DevOps para aplicaciones Next.js
 
 ## Descripción
 
-Este proyecto sirve como plantilla base para configurar un entorno de desarrollo profesional con herramientas DevOps esenciales. Incluye una pipeline de CI, hooks de pre-commit, y configuración de contenedores docker para despliegue.
+Este proyecto sirve como plantilla base para configurar un entorno de desarrollo profesional con herramientas DevOps esenciales. Incluye una pipeline de CI, hooks de pre-commit, y configuración de contenedores docker para despliegue y el despliege a Netlify.
 
 ## Stack
 
@@ -18,6 +18,11 @@ Testing
 - **Testing**
 - **ESLint**
 - **lint-staged**
+- **Cypress**
+
+Style
+
+- **Prettier**
 
 ## Instalación
 
@@ -41,3 +46,7 @@ docker build -t devops-app .
 # Ejecutar contenedor
 docker run -p 3000:3000 devops-app
 ```
+
+## URL del proyecto
+
+https://cicd-pipeline-talentops.netlify.app/
