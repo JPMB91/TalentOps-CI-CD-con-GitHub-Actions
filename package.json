@@ -6,9 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "type-check": "tsc --noEmit",
     "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "test": "jest",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:e2e": "cypress run",
     "test:coverage": "jest --coverage --watchAll=false --passWithNoTests",
-    "quality": "npm run lint && npm run test:coverage && npm run build",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "quality": "npm run type-check && npm run lint && npm run format:check && npm run test:coverage",
     "prepare": "husky"
   },
   "dependencies": {
@@ -20,6 +30,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
+    "@types/cypress": "^0.1.6",
     "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
